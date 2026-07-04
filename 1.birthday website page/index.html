@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Teddy ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+    <div id="hearts"></div>
+
+<!-- Floating Hearts -->
+<div class="hearts"></div>
+
+<!-- Password Screen -->
+
+<div id="loginScreen">
+
+    <div class="loginBox">
+
+        <h1>Happy Birthday Teddy ❤️</h1>
+
+        <p>
+            I made something special just for you.
+        </p>
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Enter our secret password">
+
+        <button onclick="checkPassword()">
+
+            Unlock My Heart ❤️
+
+        </button>
+
+        <p id="error"></p>
+
+    </div>
+
+</div>
+
+<!-- Main Website -->
+
+<div id="website">
+
+<header>
+
+<h1>Happy Birthday Teddy ❤️</h1>
+
+<p class="typing">
+
+The most beautiful girl in my world.
+
+</p>
+
+</header>
+
+<section class="hero">
+
+<h2>You Make My World Beautiful ❤️</h2>
+
+<p>
+
+Welcome to your surprise birthday website.
+
+Everything here was made with love.
+
+I hope today reminds you how special you are to me.
+
+</p>
+
+<button id="startJourney">
+
+Let's Begin Our Journey ❤️
+
+</button>
+
+</section>
+
+<!-- ========================= -->
+<!-- OUR MEMORIES -->
+<!-- ========================= -->
+
+<section class="memories">
+
+    <h2>Our Beautiful Memories ❤️</h2>
+
+    <div class="slideshow">
+
+        <img id="slide" src="images/teddy1.jpg" alt="Teddy">
+
+        <button class="prev" onclick="previousSlide()">❮</button>
+
+        <button class="next" onclick="nextSlide()">❯</button>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PHOTO DUMP -->
+<!-- ========================= -->
+
+<section class="gallery">
+
+<h2>Photo Dump 📸</h2>
+
+<div class="gallery-grid">
+
+<img src="jasmine1.jpg.jpeg" onclick="openImage(this)">
+<img src="jasmine2.jpg.jpeg" onclick="openImage(this)">
+<img src="jasmine3.jpg.jpeg" onclick="openImage(this)">
+<img src="jasmine4.jpg.jpeg" onclick="openImage(this)">
+<img src="jasmine5.jpg.jpeg" onclick="openImage(this)">
+<img src="jasmine6.jpg.jpeg" onclick="openImage(this)">
+<img src="jasmine7.jpg.jpeg" onclick="openImage(this)">
+<img src="jasmine8.jpg.jpeg" onclick="openImage(this)">
+<img src="jasmine9.jpg.jpeg" onclick="openImage(this)">
+<img src="jasmine10.jpg.jpeg" onclick="openImage(this)">
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LOVE LETTER -->
+<!-- ========================= -->
+
+<section class="love-letter">
+
+    <h2>💌 A Letter For You</h2>
+
+    <div class="envelope" onclick="openLetter()">
+
+        <div class="front">
+            💌
+        </div>
+
+    </div>
+
+    <div id="letter">
+
+        <h3>Happy Birthday Teddy ❤️</h3>
+
+        <p>
+
+            My love,
+
+            Today is one of my favorite days because it celebrates the day someone truly special came into the world.
+
+            Thank you for every smile, every laugh, every conversation, and every beautiful memory we've created together.
+
+            You make my life brighter in ways words can never fully describe.
+
+            I hope this year brings you happiness, peace, success, and everything your heart desires.
+
+            Never forget how loved you are.
+
+            Happy Birthday, beautiful.
+
+        </p>
+
+        <h4>Forever Yours ❤️</h4>
+
+        <h3>Wise</h3>
+
+    </div>
+
+</section>
+
+<section class="reasons">
+
+<h2>Reasons I Love You ❤️</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="front">😊</div>
+<div class="back">Your smile brightens my darkest days.</div>
+</div>
+
+<div class="card">
+<div class="front">😂</div>
+<div class="back">You always make me laugh.</div>
+</div>
+
+<div class="card">
+<div class="front">🌹</div>
+<div class="back">You have the kindest heart.</div>
+</div>
+
+<div class="card">
+<div class="front">🌎</div>
+<div class="back">You make my world complete.</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="gift">
+
+<h2>One More Surprise 🎁</h2>
+
+<div id="giftBox" onclick="openGift()">
+
+🎁
+
+</div>
+
+<div id="giftMessage">
+
+<h2>Surprise! 🎉🌹❤️</h2>
+
+<p>
+
+You are the greatest gift life has ever given me.
+
+Happy Birthday Teddy.
+
+May today be filled with love, joy, laughter and beautiful memories.
+
+I love you endlessly.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GRAND FINALE -->
+<!-- ========================= -->
+
+<section class="finale">
+
+<h1>The Final Surprise ❤️</h1>
+
+<p>
+Before you leave...
+make one birthday wish.
+</p>
+
+<div id="cake" onclick="blowCandles()">
+🎂
+</div>
+
+<div id="wishMessage">
+
+<h2>✨ Happy Birthday Teddy ✨</h2>
+
+<p id="typingText"></p>
+
+</div>
+
+<button id="lastButton" onclick="lastSurprise()">
+
+❤️ One Last Click ❤️
+
+</button>
+
+<div id="hiddenMessage">
+
+<h2>To My Teddy ❤️</h2>
+
+<p>
+
+Thank you for being such an amazing person.
+
+Thank you for every smile.
+
+Every laugh.
+
+Every memory.
+
+This little website is only a small way of showing
+how much you mean to me.
+
+I hope your birthday is filled with love,
+peace, laughter and countless blessings.
+
+Happy Birthday ❤️
+
+Forever Yours,
+
+Wise
+
+</p>
+
+</div>
+
+</section>
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox">
+
+<span onclick="closeImage()">✖</span>
+
+<img id="lightboxImage">
+
+</div>
+
+<audio id="music" loop>
+
+<source src="Die for You.mpeg" type="audio/mpeg">
+
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
