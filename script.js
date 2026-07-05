@@ -27,12 +27,18 @@ document.getElementById("error").innerHTML="you ain't gonna access it if your ar
 
 const images=[
 
-"images/teddy1.jpg",
-"images/teddy2.jpg",
-"images/teddy3.jpg",
-"images/teddy4.jpg",
-"images/teddy5.jpg",
-"images/teddy6.jpg"
+"jasmine1.jpg.jpeg",
+"jasmine2.jpg.jpeg",
+"jasmine3.jpg.jpeg",
+"jasmine4.jpg.jpeg",
+"jasmine5.jpg.jpeg",
+"jasmine6.jpg.jpeg",
+"jasmine7.jpg.jpeg",
+"jasmine8.jpg.jpeg",
+"jasmine9.jpg.jpeg",
+"jasmine10.jpg.jpeg",
+"jasmine11.jpg.jpeg",
+"jasmine12.jpg.jpeg"
 
 ];
 
